@@ -1,0 +1,1 @@
+fping -p 50 -c 10 $1 2>&1| tail -n 1 | awk '{print $NF}' | cut -d '/' -f2
